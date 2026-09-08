@@ -1,4 +1,4 @@
-# ⚡ Bithunt — Frontend
+# Bithunt — Frontend
 
 > **CODE. THINK. HUNT.**
 >
@@ -13,7 +13,7 @@
 
 ---
 
-## 🧬 About Bithunt
+## About Bithunt
 
 **Bithunt** is a coding competition focused on practical problem-solving and algorithmic thinking. Participants will navigate **two rounds** over a **3-hour** competition, using the programming language of their choice on a custom-built competition platform.
 
@@ -27,38 +27,38 @@ The frontend is designed around a **dark, technical, terminal-inspired visual la
 
 | | Details |
 |---|---|
-| 🏷️ **Event** | Bithunt |
-| 🧑‍💻 **Organizer** | Team Parsec |
-| 🏛️ **Organization** | IIT Dharwad |
-| ⏱️ **Duration** | 3 Hours |
-| 🧩 **Rounds** | 2 |
-| 💻 **Languages** | Any |
-| 🖥️ **Platform** | Custom Built |
-| 👥 **Maximum Team Size** | 4 |
-| 📅 **Event Date** | To Be Announced |
-| 🎁 **Prizes** | To Be Announced |
+|  **Event** | Bithunt |
+|  **Organizer** | Team Parsec |
+|  **Organization** | IIT Dharwad |
+|  **Duration** | 3 Hours |
+|  **Rounds** | 2 |
+|  **Languages** | Any |
+|  **Platform** | Custom Built |
+|  **Maximum Team Size** | 4 |
+|  **Event Date** | To Be Announced |
+|  **Prizes** | To Be Announced |
 
 ---
 
-## 🖥️ Current Frontend
+##  Current Frontend
 
 The current landing page includes:
 
-- ⚡ Hero section with Bithunt branding and event status
-- 🖥️ Terminal-style competition initialization panel
-- 🎯 About / objective section
-- 📊 Competition statistics
-- 🧩 Two-round competition overview
-- 📜 Rules / mission parameters
-- ❓ Interactive FAQ accordion
-- 🚀 Registration call-to-action
-- 📱 Responsive mobile layout
-- ✨ Scanline and subtle noise effects
-- 🎨 Cyberpunk-inspired clipped UI components
+-  Hero section with Bithunt branding and event status
+-  Terminal-style competition initialization panel
+-  About / objective section
+-  Competition statistics
+-  Two-round competition overview
+-  Rules / mission parameters
+-  Interactive FAQ accordion
+-  Registration call-to-action
+-  Responsive mobile layout
+-  Scanline and subtle noise effects
+-  Cyberpunk-inspired clipped UI components
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - **Next.js** — application framework
 - **React** — UI architecture
@@ -70,7 +70,7 @@ The current landing page includes:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Bithunt-frontend/
@@ -89,7 +89,7 @@ Bithunt-frontend/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -172,7 +172,7 @@ http://localhost:3000
 
 ---
 
-## 🎨 Design Principles
+## Design Principles
 
 The Bithunt interface follows a few core principles:
 
@@ -193,7 +193,7 @@ References can influence the visual language, but Bithunt's identity and impleme
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Team Parsec — IIT Dharwad**
 
@@ -205,7 +205,7 @@ Prizes: **Coming soon**
 
 ---
 
-## 🤝 Contribution
+## Contribution
 
 This repository is being developed for the **Bithunt event by Team Parsec, IIT Dharwad**.
 
@@ -219,7 +219,7 @@ When contributing:
 
 ---
 
-## 📜 License
+## License
 
 This project is currently intended for the **Bithunt / Team Parsec event**. Licensing and reuse terms can be added when the project reaches its public-release stage.
 
