@@ -8,9 +8,24 @@ const faqs = [["Who can participate?","Event eligibility details will be announc
 
 export default function Home(){
  const [open,setOpen]=useState<number|null>(null); const [boot,setBoot]=useState(true);
- useEffect(()=>{const t=setTimeout(()=>setBoot(false),850);return()=>clearTimeout(t)},[]);
- return <main className={boot?"site booting":"site"}><div className="scanlines"/><div className="noise"/>
- <header className="topbar"><a className="brand" href="#top"><span>BITHUNT</span><i>//</i><small>PARSEC</small></a><nav><a href="#about">ABOUT</a><a href="#hunt">THE HUNT</a><a href="#rules">RULES</a><a href="#faq">FAQ</a></nav><a className="mini-cta" href="#register">REGISTER <ArrowDownRight size={15}/></a></header>
+ useEffect(()=>{const t=setTimeout(()=>setBoot(false),1800);return()=>clearTimeout(t)},[]);
+ return <main className={boot?"site booting":"site"}>
+ <div className={boot?"intro-overlay":"intro-overlay intro-complete"} aria-hidden="true">
+   <div className="intro-frame">
+     <div className="intro-meta"><span>PARSEC 7.0</span><span>SECURE CHANNEL // 07</span></div>
+     <div className="intro-center">
+       <p className="intro-system">[ SYSTEM INITIALIZING ]</p>
+       <h2>PARSEC 7.0</h2>
+       <p className="intro-doomsday">DOOMSDAY PROTOCOL</p>
+       <div className="intro-rule"><span/><i/><span/></div>
+       <h1>BITHUNT</h1>
+       <p className="intro-initialized">INITIALIZED <b>✓</b></p>
+     </div>
+     <div className="intro-progress"><span/><b>ACCESSING EVENT CORE</b><em>100%</em></div>
+   </div>
+ </div>
+ <div className="scanlines"/><div className="noise"/>
+ <header className="topbar"><a className="brand" href="#top"><span>BITHUNT</span><i>//</i><small>PARSEC 7.0</small></a><nav><a href="#about">ABOUT</a><a href="#hunt">THE HUNT</a><a href="#rules">RULES</a><a href="#faq">FAQ</a></nav><a className="mini-cta" href="#register">REGISTER <ArrowDownRight size={15}/></a></header>
  <section id="top" className="hero"><div className="hero-grid"/><div className="hero-copy"><div className="eyebrow"><span className="live-dot"/> SYSTEM STATUS: <b>AWAITING HUNTERS</b></div><p className="kicker">TEAM PARSEC // IIT DHARWAD</p><h1><span>BIT</span><em>HUNT</em></h1><div className="hero-line"><span>01</span><div/><span>CODE / THINK / HUNT</span></div><p className="hero-text">A competitive programming challenge built to test <strong>problem-solving, data structures and algorithms.</strong></p><div className="hero-actions"><a className="cyber-button primary" href="#register">ENTER THE HUNT <ArrowDownRight size={18}/></a><a className="cyber-button" href="#about">EXPLORE EVENT</a></div></div><div className="terminal-card"><div className="terminal-head"><span>root@bithunt:~</span><span>● ● ●</span></div><div className="terminal-body"><p><b>$</b> initialize_bithunt</p><p className="ok">[OK] EVENT CORE ONLINE</p><p><b>$</b> scan --competition</p><p>rounds: <span>02</span></p><p>duration: <span>03h</span></p><p>languages: <span>ANY</span></p><p><b>$</b> status</p><p className="warning">REGISTRATION: <span>TBA</span></p><div className="cursor">█</div></div></div><div className="scroll-hint"><span>SCROLL TO HUNT</span><ArrowDownRight size={16}/></div></section>
  <section id="about" className="section"><div className="section-index">01 / ABOUT</div><div className="section-heading"><p>THE OBJECTIVE</p><h2>THINK DIFFERENT.<br/><span>CODE SMARTER.</span></h2></div><div className="about-grid"><p className="lead">Bithunt is a coding competition where your <span>logic</span>, <span>algorithmic thinking</span>, and ability to solve under pressure become your biggest weapons.</p><div className="quote-box"><Terminal size={18}/><p>&gt; Find the problem.<br/>&gt; Find the pattern.<br/>&gt; Find the solution.</p></div></div></section>
  <section id="hunt" className="section hunt"><div className="section-index">02 / THE HUNT</div><div className="section-heading"><p>COMPETITION PROTOCOL</p><h2>THE HUNT<br/><span>BEGINS HERE.</span></h2></div><div className="stat-grid">{stats.map(([n,label,value])=><div className="stat" key={n}><small>{n}</small><p>{label}</p><strong>{value}</strong><Zap size={15}/></div>)}</div><div className="rounds"><article><span>ROUND 01</span><h3>THE SEARCH</h3><p>Enter the arena. Decode the problems. Build the fastest path to a solution.</p></article><div className="round-arrow">→</div><article><span>ROUND 02</span><h3>THE CONQUEST</h3><p>Push your limits, optimize your approach, and climb the final ranking.</p></article></div></section>
